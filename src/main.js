@@ -24,8 +24,8 @@ function render() {
 
         li.innerHTML = `
       <span class="list__text">${task.text}</span>
-      <div class="list__buttons"><button class="list__toggle"><img src="src/img/toggle.svg" alt="toggle"></button>
-      <button class="list__delete"><img src="src/img/delete.svg" alt="toggle"></button></div>
+      <div class="list__buttons"><button class="list__toggle"><img src="/img/toggle.svg" alt="toggle"></button>
+      <button class="list__delete"><img src="/img/delete.svg" alt="toggle"></button></div>
     `;
 
         li.querySelector('.list__toggle').addEventListener('click', () => {
