@@ -1,4 +1,7 @@
 import './sass/style.scss';
+import toggleIcon from './img/toggle.svg';
+import deleteIcon from './img/delete.svg';
+
 
 
 const input = document.querySelector('#taskInput');
@@ -24,8 +27,10 @@ function render() {
 
         li.innerHTML = `
       <span class="list__text">${task.text}</span>
-      <div class="list__buttons"><button class="list__toggle"><img src="/img/toggle.svg" alt="toggle"></button>
-      <button class="list__delete"><img src="/img/delete.svg" alt="toggle"></button></div>
+      <div class="list__buttons"><button class="list__toggle"><img src="${toggleIcon}" alt="отметить">
+</button>
+      <button class="list__delete"><img src="${deleteIcon}" alt="отметить">
+</button></div>
     `;
 
         li.querySelector('.list__toggle').addEventListener('click', () => {
