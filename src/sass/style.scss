@@ -1,0 +1,94 @@
+// === ПАЛИТРА ===
+$bg: #ffffff;
+$surface: #f5f6f8;
+$border: #e3e6ea;
+$text: #1a1d24;
+$muted: #9aa0ab;
+$accent: #3b82f6;
+$danger: #f87171;
+
+body {
+    background-color: $bg;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    background: $surface;
+    border: 1px solid $border;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-left: 0;
+
+    width: 80%;
+    margin: 20px auto;
+    min-height: 300px;
+    height: auto;
+    list-style-type: none;
+
+    padding: 20px;
+}
+
+
+.list__item {
+    display: flex;
+    width: 300px;
+    gap: 20px;
+    align-items: center;
+    color: $text;
+}
+
+.list__buttons {
+    display: flex;
+
+}
+
+.list__item--done {
+    text-decoration: line-through;
+    text-decoration-color: $danger;
+    text-decoration-thickness: 3px;
+    color: $muted;
+}
+
+.list__toggle,
+.list__delete {
+    width: 30px;
+    height: 30px;
+
+    background: $accent;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.list__toggle {
+    background: $accent;
+}
+
+.list__delete {
+
+    background: $danger;
+
+}
+
+.form__input {
+    background: $surface;
+    border: 1px solid $border;
+}
+
+.form__input:focus {
+    border-color: $accent;
+}
+
+.form__btn {
+    background: $accent;
+    color: #ffffff;
+}
